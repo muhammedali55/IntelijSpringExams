@@ -4,9 +4,8 @@ import com.SpringDeneme.SpringDemo.dao.OwnerRepository;
 import com.SpringDeneme.SpringDemo.model.Owner;
 import org.springframework.stereotype.Repository;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Repository
 public class OwnerRepositoryInMemoryImpl implements OwnerRepository {
@@ -45,31 +44,33 @@ public class OwnerRepositoryInMemoryImpl implements OwnerRepository {
 
     @Override
     public List<Owner> findAll() {
-        return null;
+        return new ArrayList<>(ownersMap.values());
     }
 
     @Override
     public Owner findById(Long id) {
-        return null;
+        return ownersMap.get(id);
     }
 
     @Override
     public List<Owner> findByLastName(String lastName) {
-        return null;
+        return ownersMap.values().stream().filter(x-> x.getLastName().equals(lastName)).collect(Collectors.toList());
     }
 
     @Override
     public void create(Owner owner) {
-
+        owner.setId(new Date().getTime());
+        ownersMap.put(owner.getId(),owner);
     }
 
     @Override
     public Owner update(Owner owner) {
-        return null;
+        ownersMap.replace(owner.getId(),owner);
+        return  owner;
     }
 
     @Override
     public void delete(Long id) {
-
+        ownersMap.remove(id);
     }
 }
