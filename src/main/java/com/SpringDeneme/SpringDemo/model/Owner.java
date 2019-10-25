@@ -3,6 +3,7 @@ package com.SpringDeneme.SpringDemo.model;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class Owner {
     private Long id;
     private String firstName;
@@ -33,6 +34,7 @@ public class Owner {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
 
     public Set<Pet> getPets() {
         return pets;
