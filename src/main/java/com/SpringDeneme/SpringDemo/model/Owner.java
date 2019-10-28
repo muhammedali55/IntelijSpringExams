@@ -1,14 +1,20 @@
 package com.SpringDeneme.SpringDemo.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-
+@Entity
+@Table
 public class Owner {
+    @Id
+    @SequenceGenerator(name = "sq_owner_id",sequenceName = "sq_owner_id",initialValue = 1,allocationSize = 1)
+    @GeneratedValue(generator = "sq_owner_id")
     private Long id;
     private String firstName;
     private String lastName;
 
+    @OneToMany(mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
 
     public Long getId() {

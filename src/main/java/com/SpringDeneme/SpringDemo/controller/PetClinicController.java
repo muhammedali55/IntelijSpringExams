@@ -13,6 +13,13 @@ public class PetClinicController {
     @Autowired
     private PetClinicService petClinicService;
 
+    @RequestMapping(value = {"/","/index.html"})
+    public ModelAndView logout(){
+        ModelAndView md = new ModelAndView();
+        md.setViewName("index");
+        return md;
+    }
+
     @RequestMapping("/selam")
     @ResponseBody
     public String welcome(){

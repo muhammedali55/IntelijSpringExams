@@ -1,618 +1,259 @@
-2019-10-25 08:50:03.109  INFO 8440 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 8440 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 08:50:03.140  INFO 8440 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 08:50:03.203  INFO 8440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 08:50:03.203  INFO 8440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 08:50:04.281  INFO 8440 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$a1795cf2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 08:50:04.328  INFO 8440 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 08:50:04.672  INFO 8440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 08:50:04.672  INFO 8440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 08:50:04.687  INFO 8440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 08:50:04.781  INFO 8440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 08:50:04.781 DEBUG 8440 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 08:50:04.781  INFO 8440 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1578 ms
-2019-10-25 08:50:05.125  INFO 8440 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 08:50:05.141 DEBUG 8440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 08:50:05.187 DEBUG 8440 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
-2019-10-25 08:50:05.203  INFO 8440 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 08:50:05.219 DEBUG 8440 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 08:50:05.219 DEBUG 8440 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 08:50:05.375  INFO 8440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 08:50:05.375  INFO 8440 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 08:50:05.469  INFO 8440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 08:50:05.469  INFO 8440 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 2.906 seconds (JVM running for 3.408)
-2019-10-25 08:50:31.669  INFO 8440 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 08:50:31.669  INFO 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 08:50:31.669 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 08:50:31.684 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 08:50:31.700  INFO 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
-2019-10-25 08:50:31.700 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/testekle", parameters={}
-2019-10-25 08:50:31.731 DEBUG 8440 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#testEkle()
-2019-10-25 08:50:31.825 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8080/rest/owner
-2019-10-25 08:50:31.872 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Writing [Owner [id=1571982631778, firstName=Yeni Ekle Müþteri, lastName=Soyad66]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-10-25 08:50:31.921 DEBUG 8440 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/rest/owner", parameters={}
-2019-10-25 08:50:31.923 DEBUG 8440 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#createOwner(Owner)
-2019-10-25 08:50:32.038 DEBUG 8440 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Owner [id=1571982631778, firstName=Yeni Ekle Müþteri, lastName=Soyad66]]
-2019-10-25 08:50:32.058 DEBUG 8440 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=.2', given [text/html, image/gif, image/jpeg, */*;q=.2, */*;q=.2] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 08:50:32.058 DEBUG 8440 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2019-10-25 08:50:32.061 DEBUG 8440 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2019-10-25 08:50:32.072 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Response 500 INTERNAL_SERVER_ERROR
-2019-10-25 08:50:32.077 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error
-2019-10-25 08:50:32.095 ERROR 8440 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error] with root cause
+2019-10-28 09:37:01.291  INFO 15956 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 15956 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
+2019-10-28 09:37:01.303  INFO 15956 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
+2019-10-28 09:37:01.381  INFO 15956 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\ab175103\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2019-10-28 09:37:01.382  INFO 15956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-28 09:37:01.382  INFO 15956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 09:37:02.879  INFO 15956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 09:37:02.922  INFO 15956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-10-28 09:37:03.469  INFO 15956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9cbd3e18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 09:37:03.571  INFO 15956 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-28 09:37:03.604  INFO 15956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 09:37:04.120  INFO 15956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-28 09:37:04.161  INFO 15956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-28 09:37:04.162  INFO 15956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-28 09:37:04.408  INFO 15956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-28 09:37:04.409 DEBUG 15956 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-28 09:37:04.409  INFO 15956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3027 ms
+2019-10-28 09:37:04.569 ERROR 15956 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : Failed to load driver class org.postgresql.Driver from HikariConfig class classloader jdk.internal.loader.ClassLoaders$AppClassLoader@8bcc55f
+2019-10-28 09:37:04.571 ERROR 15956 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+2019-10-28 09:37:04.606  INFO 15956 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-10-28 09:37:04.627  WARN 15956 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2019-10-28 09:37:04.656  INFO 15956 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
 
-org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error
-	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:79) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:102) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:785) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:743) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:677) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.client.RestTemplate.postForLocation(RestTemplate.java:391) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at com.SpringDeneme.SpringDemo.controller.PetClinicRestController.testEkle(PetClinicRestController.java:79) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-28 09:37:04.661 ERROR 15956 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-2019-10-25 08:50:32.101 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-10-25 08:50:32.104 DEBUG 8440 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2019-10-25 08:50:32.117 DEBUG 8440 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
-2019-10-25 08:50:32.244 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2019-10-25 08:50:32.246 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2019-10-25 08:50:32.248 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2019-10-25 08:50:32.248 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2019-10-25 08:50:32.249 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-10-25 08:50:32.250 DEBUG 8440 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2019-10-25 08:50:32.252 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 08:50:32.253 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Oct 25 08:50:32 EET 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
-2019-10-25 08:50:32.264 DEBUG 8440 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2019-10-25 08:54:11.772  INFO 14384 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 14384 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 08:54:11.772  INFO 14384 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 08:54:11.850  INFO 14384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 08:54:11.850  INFO 14384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 08:54:13.147  INFO 14384 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e929cb8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 08:54:13.209  INFO 14384 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 08:54:13.616  INFO 14384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 08:54:13.616  INFO 14384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 08:54:13.631  INFO 14384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 08:54:13.756  INFO 14384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 08:54:13.756 DEBUG 14384 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 08:54:13.756  INFO 14384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1906 ms
-2019-10-25 08:54:14.163  INFO 14384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 08:54:14.163 DEBUG 14384 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 08:54:14.241 DEBUG 14384 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
-2019-10-25 08:54:14.241  INFO 14384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 08:54:14.272 DEBUG 14384 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 08:54:14.272 DEBUG 14384 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 08:54:14.553  INFO 14384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 08:54:14.553  INFO 14384 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 08:54:14.663  INFO 14384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 08:54:14.663  INFO 14384 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 3.476 seconds (JVM running for 4.135)
-2019-10-25 08:54:22.209  INFO 14384 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 08:54:22.211  INFO 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 08:54:22.214 DEBUG 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 08:54:22.223 DEBUG 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 08:54:22.223  INFO 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2019-10-25 08:54:22.236 DEBUG 14384 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/rest/testekle", parameters={}
-2019-10-25 08:54:22.244 DEBUG 14384 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#testEkle()
-2019-10-25 08:54:22.290 DEBUG 14384 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8080/rest/owner
-2019-10-25 08:54:22.354 DEBUG 14384 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [Owner [id=1571982862266, firstName=Yeni Ekle Müþteri, lastName=Soyad66]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-10-25 08:54:22.373 DEBUG 14384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/rest/owner", parameters={}
-2019-10-25 08:54:22.376 DEBUG 14384 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#createOwner(Owner)
-2019-10-25 08:54:22.430 DEBUG 14384 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Owner [id=1571982862266, firstName=Yeni Ekle Müþteri, lastName=Soyad66]]
-2019-10-25 09:02:08.961  INFO 15516 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 15516 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 09:02:08.965  INFO 15516 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 09:02:09.051  INFO 15516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 09:02:09.051  INFO 15516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 09:02:10.558  INFO 15516 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$aa11c089] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 09:02:10.638  INFO 15516 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 09:02:11.088  INFO 15516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 09:02:11.104  INFO 15516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 09:02:11.107  INFO 15516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 09:02:11.266  INFO 15516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 09:02:11.266 DEBUG 15516 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 09:02:11.267  INFO 15516 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2216 ms
-2019-10-25 09:02:11.702  INFO 15516 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 09:02:11.713 DEBUG 15516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 09:02:11.783 DEBUG 15516 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
-2019-10-25 09:02:11.787  INFO 15516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 09:02:11.853 DEBUG 15516 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 09:02:11.869 DEBUG 15516 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 09:02:12.081  INFO 15516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 09:02:12.087  INFO 15516 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 09:02:12.207  INFO 15516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 09:02:12.211  INFO 15516 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 3.828 seconds (JVM running for 4.363)
-2019-10-25 09:02:26.900  INFO 15516 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 09:02:26.902  INFO 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 09:02:26.902 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 09:02:26.911 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 09:02:26.911  INFO 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-10-25 09:02:26.921 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/testekle", parameters={}
-2019-10-25 09:02:26.928 DEBUG 15516 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#testEkle()
-2019-10-25 09:02:26.969 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8080/rest/owner
-2019-10-25 09:02:27.015 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Writing [Owner [id=1571983346947, firstName=Yeni Ekle Müþteri, lastName=Soyad66]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-10-25 09:02:27.037 DEBUG 15516 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/rest/owner", parameters={}
-2019-10-25 09:02:27.040 DEBUG 15516 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#createOwner(Owner)
-2019-10-25 09:02:27.085 DEBUG 15516 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Owner [id=1571983346947, firstName=Yeni Ekle Müþteri, lastName=Soyad66]]
-2019-10-25 09:02:27.101 DEBUG 15516 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=.2', given [text/html, image/gif, image/jpeg, */*;q=.2, */*;q=.2] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:02:27.102 DEBUG 15516 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2019-10-25 09:02:27.105 DEBUG 15516 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2019-10-25 09:02:27.111 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.client.RestTemplate              : Response 201 CREATED
-2019-10-25 09:02:27.115 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:02:27.116 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2019-10-25 09:02:27.116 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2019-10-25 09:03:22.877 DEBUG 15516 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/rest/owners", parameters={}
-2019-10-25 09:03:22.880 DEBUG 15516 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwners()
-2019-10-25 09:03:22.886 DEBUG 15516 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:03:22.888 DEBUG 15516 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Owner [id=1, firstName=Muhammet Ali, lastName=Soyad], Owner [id=2, firstName=Veli, lastName=Soyad2] (truncated)...]
-2019-10-25 09:03:22.895 DEBUG 15516 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:03:52.881 DEBUG 15516 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/rest/test", parameters={}
-2019-10-25 09:03:52.883 DEBUG 15516 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#test()
-2019-10-25 09:03:52.892 DEBUG 15516 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8080/rest/owner/4
-2019-10-25 09:03:52.923 DEBUG 15516 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2019-10-25 09:03:52.926 DEBUG 15516 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/4", parameters={}
-2019-10-25 09:03:52.927 DEBUG 15516 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwner(Long)
-2019-10-25 09:03:52.936 DEBUG 15516 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:03:52.937 DEBUG 15516 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Owner [id=4, firstName=Tuba, lastName=Soyad-4]]
-2019-10-25 09:03:52.938 DEBUG 15516 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
-2019-10-25 09:03:52.938 DEBUG 15516 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:03:52.939 DEBUG 15516 --- [http-nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [com.SpringDeneme.SpringDemo.model.Owner]
-2019-10-25 09:03:52.942 DEBUG 15516 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:03:52.942 DEBUG 15516 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Tuba"]
-2019-10-25 09:03:52.943 DEBUG 15516 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:03:57.266 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/rest/testekle", parameters={}
-2019-10-25 09:03:57.269 DEBUG 15516 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#testEkle()
-2019-10-25 09:03:57.273 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8080/rest/owner
-2019-10-25 09:03:57.275 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [Owner [id=1571983437272, firstName=Yeni Ekle Müþteri, lastName=Soyad66]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-10-25 09:03:57.281 DEBUG 15516 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/rest/owner", parameters={}
-2019-10-25 09:03:57.282 DEBUG 15516 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#createOwner(Owner)
-2019-10-25 09:03:57.282 DEBUG 15516 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Owner [id=1571983437272, firstName=Yeni Ekle Müþteri, lastName=Soyad66]]
-2019-10-25 09:03:57.283 DEBUG 15516 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=.2', given [text/html, image/gif, image/jpeg, */*;q=.2, */*;q=.2] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:03:57.284 DEBUG 15516 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2019-10-25 09:03:57.284 DEBUG 15516 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2019-10-25 09:03:57.285 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 201 CREATED
-2019-10-25 09:03:57.286 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:03:57.286 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
-2019-10-25 09:03:57.287 DEBUG 15516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2019-10-25 09:03:59.903 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/owners", parameters={}
-2019-10-25 09:03:59.904 DEBUG 15516 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwners()
-2019-10-25 09:03:59.905 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:03:59.906 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Owner [id=1, firstName=Muhammet Ali, lastName=Soyad], Owner [id=2, firstName=Veli, lastName=Soyad2] (truncated)...]
-2019-10-25 09:03:59.907 DEBUG 15516 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:13:09.473  INFO 14116 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 14116 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 09:13:09.476  INFO 14116 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 09:13:09.546  INFO 14116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 09:13:09.546  INFO 14116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 09:13:10.734  INFO 14116 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$251cfc94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 09:13:10.791  INFO 14116 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 09:13:11.139  INFO 14116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 09:13:11.153  INFO 14116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 09:13:11.155  INFO 14116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 09:13:11.283  INFO 14116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 09:13:11.283 DEBUG 14116 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 09:13:11.283  INFO 14116 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1737 ms
-2019-10-25 09:13:11.657  INFO 14116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 09:13:11.667 DEBUG 14116 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 09:13:11.734 DEBUG 14116 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
-2019-10-25 09:13:11.737  INFO 14116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 09:13:11.761 DEBUG 14116 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 09:13:11.770 DEBUG 14116 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 09:13:11.946  INFO 14116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 09:13:11.952  INFO 14116 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 09:13:12.040  INFO 14116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 09:13:12.050  INFO 14116 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 3.131 seconds (JVM running for 3.68)
-2019-10-25 09:13:22.588  INFO 14116 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 09:13:22.589  INFO 14116 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 09:13:22.590 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 09:13:22.601 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 09:13:22.602  INFO 14116 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-10-25 09:13:22.616 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/rest/update", parameters={}
-2019-10-25 09:13:22.626 DEBUG 14116 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#update()
-2019-10-25 09:13:22.675 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8080/rest/owner/4
-2019-10-25 09:13:22.760 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2019-10-25 09:13:22.772 DEBUG 14116 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/4", parameters={}
-2019-10-25 09:13:22.774 DEBUG 14116 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwner(Long)
-2019-10-25 09:13:22.815 DEBUG 14116 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:13:22.821 DEBUG 14116 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Owner [id=4, firstName=Tuba, lastName=Soyad-4]]
-2019-10-25 09:13:22.840 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
-2019-10-25 09:13:22.842 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [com.SpringDeneme.SpringDemo.model.Owner]
-2019-10-25 09:13:22.841 DEBUG 14116 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:13:22.855 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8080/rest/owner/4
-2019-10-25 09:13:22.857 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Writing [Owner [id=4, firstName=Deðiþen Ýsim, lastName=Soyad-4]] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-10-25 09:13:22.861 DEBUG 14116 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : PUT "/rest/owner/4", parameters={}
-2019-10-25 09:13:22.864 DEBUG 14116 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#updateOwner(Long, Owner)
-2019-10-25 09:13:22.873 DEBUG 14116 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Owner [id=4, firstName=Deðiþen Ýsim, lastName=Soyad-4]]
-2019-10-25 09:13:22.878 DEBUG 14116 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : No match for [text/html, image/gif, image/jpeg, */*;q=.2, */*;q=.2], supported: []
-2019-10-25 09:13:22.878 DEBUG 14116 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:13:22.879 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
-2019-10-25 09:13:22.882 DEBUG 14116 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:13:22.882 DEBUG 14116 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Ok"]
-2019-10-25 09:13:22.884 DEBUG 14116 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:13:26.417 DEBUG 14116 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/rest/owners", parameters={}
-2019-10-25 09:13:26.418 DEBUG 14116 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwners()
-2019-10-25 09:13:26.421 DEBUG 14116 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:13:26.422 DEBUG 14116 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Owner [id=1, firstName=Muhammet Ali, lastName=Soyad], Owner [id=2, firstName=Veli, lastName=Soyad2] (truncated)...]
-2019-10-25 09:13:26.423 DEBUG 14116 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:28:34.256  INFO 16216 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 16216 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 09:28:34.261  INFO 16216 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 09:28:34.325  INFO 16216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 09:28:34.326  INFO 16216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 09:28:35.758  INFO 16216 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d4d86a2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 09:28:35.817  INFO 16216 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 09:28:36.248  INFO 16216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 09:28:36.264  INFO 16216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 09:28:36.267  INFO 16216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 09:28:36.408  INFO 16216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 09:28:36.408 DEBUG 16216 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 09:28:36.408  INFO 16216 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2082 ms
-2019-10-25 09:28:36.872  INFO 16216 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 09:28:36.883 DEBUG 16216 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 09:28:36.955 DEBUG 16216 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
-2019-10-25 09:28:36.961  INFO 16216 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 09:28:36.984 DEBUG 16216 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 09:28:36.993 DEBUG 16216 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 09:28:37.178  INFO 16216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 09:28:37.183  INFO 16216 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 09:28:37.399  INFO 16216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 09:28:37.403  INFO 16216 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 3.779 seconds (JVM running for 4.342)
-2019-10-25 09:28:40.839  INFO 16216 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 09:28:40.847  INFO 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 09:28:40.847 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 09:28:40.856 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 09:28:40.867  INFO 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
-2019-10-25 09:28:40.908 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/owners/2", parameters={}
-2019-10-25 09:28:40.916 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2019-10-25 09:28:40.920 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2019-10-25 09:28:40.920 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2019-10-25 09:28:40.928 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-10-25 09:28:40.975 DEBUG 16216 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2019-10-25 09:28:41.005 DEBUG 16216 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2019-10-25 09:28:50.675 DEBUG 16216 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/rest/owners", parameters={}
-2019-10-25 09:28:50.676 DEBUG 16216 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwners()
-2019-10-25 09:28:50.696 DEBUG 16216 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-10-25 09:28:50.703 DEBUG 16216 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Owner [id=1, firstName=Muhammet Ali, lastName=Soyad], Owner [id=2, firstName=Veli, lastName=Soyad2] (truncated)...]
-2019-10-25 09:28:50.767 DEBUG 16216 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2019-10-25 09:29:11.291 DEBUG 16216 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2", parameters={}
-2019-10-25 09:29:11.293 DEBUG 16216 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwner(Long)
-2019-10-25 09:29:11.302 DEBUG 16216 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/xhtml+xml', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
-2019-10-25 09:29:11.303 DEBUG 16216 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Owner [id=2, firstName=Veli, lastName=Soyad2]]
-2019-10-25 09:29:11.346 DEBUG 16216 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.http.converter.HttpMessageConversionException: Could not instantiate JAXBContext for class [class com.SpringDeneme.SpringDemo.model.Owner]: Implementation of JAXB-API has not been found on module path or classpath.; nested exception is javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
- - with linked exception:
-[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]
-2019-10-25 09:29:11.356 ERROR 16216 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageConversionException: Could not instantiate JAXBContext for class [class com.SpringDeneme.SpringDemo.model.Owner]: Implementation of JAXB-API has not been found on module path or classpath.; nested exception is javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
- - with linked exception:
-[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]] with root cause
+***************************
+APPLICATION FAILED TO START
+***************************
 
-java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory
-	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:72) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at javax.xml.bind.ServiceLoaderUtil.nullSafeLoadClass(ServiceLoaderUtil.java:92) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ServiceLoaderUtil.safeLoadClass(ServiceLoaderUtil.java:125) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:230) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ContextFinder.find(ContextFinder.java:375) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:691) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:632) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter.getJaxbContext(AbstractJaxb2HttpMessageConverter.java:113) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter.createMarshaller(AbstractJaxb2HttpMessageConverter.java:52) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter.writeToResult(Jaxb2RootElementHttpMessageConverter.java:181) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter.writeInternal(AbstractXmlHttpMessageConverter.java:85) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:298) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:226) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Description:
 
-2019-10-25 09:29:11.357 DEBUG 16216 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-10-25 09:29:11.358 DEBUG 16216 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2019-10-25 09:29:11.365 DEBUG 16216 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
-2019-10-25 09:31:03.119  INFO 11600 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 11600 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 09:31:03.122  INFO 11600 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 09:31:03.191  INFO 11600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 09:31:03.191  INFO 11600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 09:31:04.228  INFO 11600 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ee665eff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 09:31:04.284  INFO 11600 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 09:31:04.595  INFO 11600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 09:31:04.607  INFO 11600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 09:31:04.610  INFO 11600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 09:31:04.721  INFO 11600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 09:31:04.721 DEBUG 11600 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 09:31:04.721  INFO 11600 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1530 ms
-2019-10-25 09:31:05.051  INFO 11600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 09:31:05.059 DEBUG 11600 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 09:31:05.116 DEBUG 11600 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
-2019-10-25 09:31:05.118  INFO 11600 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 09:31:05.137 DEBUG 11600 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 09:31:05.145 DEBUG 11600 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 09:31:05.294  INFO 11600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 09:31:05.298  INFO 11600 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 09:31:05.384  INFO 11600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 09:31:05.387  INFO 11600 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 2.759 seconds (JVM running for 3.296)
-2019-10-25 09:32:09.579  INFO 11600 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 09:32:09.580  INFO 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 09:32:09.581 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 09:32:09.589 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 09:32:09.590  INFO 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-10-25 09:32:09.599 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2", parameters={}
-2019-10-25 09:32:09.606 DEBUG 11600 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwner(Long)
-2019-10-25 09:32:09.666 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/xhtml+xml', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
-2019-10-25 09:32:09.674 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Owner [id=2, firstName=Veli, lastName=Soyad2]]
-2019-10-25 09:32:09.688 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.http.converter.HttpMessageConversionException: Could not instantiate JAXBContext for class [class com.SpringDeneme.SpringDemo.model.Owner]: Implementation of JAXB-API has not been found on module path or classpath.; nested exception is javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
- - with linked exception:
-[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]
-2019-10-25 09:32:09.699 ERROR 11600 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageConversionException: Could not instantiate JAXBContext for class [class com.SpringDeneme.SpringDemo.model.Owner]: Implementation of JAXB-API has not been found on module path or classpath.; nested exception is javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
- - with linked exception:
-[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]] with root cause
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
 
-java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory
-	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:72) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at javax.xml.bind.ServiceLoaderUtil.nullSafeLoadClass(ServiceLoaderUtil.java:92) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ServiceLoaderUtil.safeLoadClass(ServiceLoaderUtil.java:125) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:230) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ContextFinder.find(ContextFinder.java:375) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:691) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:632) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter.getJaxbContext(AbstractJaxb2HttpMessageConverter.java:113) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter.createMarshaller(AbstractJaxb2HttpMessageConverter.java:52) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter.writeToResult(Jaxb2RootElementHttpMessageConverter.java:181) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter.writeInternal(AbstractXmlHttpMessageConverter.java:85) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:298) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:226) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+    Property: driverclassname
+    Value: org.postgresql.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Failed to load driver class org.postgresql.Driver in either of HikariConfig class loader or Thread context classloader
 
-2019-10-25 09:32:09.704 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-10-25 09:32:09.706 DEBUG 11600 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2019-10-25 09:32:09.718 DEBUG 11600 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
-2019-10-25 09:37:02.297  INFO 2964 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 2964 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
-2019-10-25 09:37:02.305  INFO 2964 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
-2019-10-25 09:37:02.381  INFO 2964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-10-25 09:37:02.381  INFO 2964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-10-25 09:37:03.689  INFO 2964 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$fa5fa042] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-10-25 09:37:03.742  INFO 2964 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-10-25 09:37:04.073  INFO 2964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-10-25 09:37:04.086  INFO 2964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-10-25 09:37:04.089  INFO 2964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2019-10-25 09:37:04.212  INFO 2964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-10-25 09:37:04.212 DEBUG 2964 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-10-25 09:37:04.212  INFO 2964 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1831 ms
-2019-10-25 09:37:04.548  INFO 2964 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-10-25 09:37:04.563 DEBUG 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-10-25 09:37:04.610 DEBUG 2964 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
-2019-10-25 09:37:04.626  INFO 2964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
-2019-10-25 09:37:04.642 DEBUG 2964 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-10-25 09:37:04.642 DEBUG 2964 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-10-25 09:37:04.860  INFO 2964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-10-25 09:37:04.860  INFO 2964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-10-25 09:37:05.032  INFO 2964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-10-25 09:37:05.032  INFO 2964 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 3.456 seconds (JVM running for 4.15)
-2019-10-25 09:37:14.503  INFO 2964 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-10-25 09:37:14.505  INFO 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-10-25 09:37:14.505 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-10-25 09:37:14.512 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-10-25 09:37:14.513  INFO 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-10-25 09:37:14.523 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/rest/owner/2", parameters={}
-2019-10-25 09:37:14.532 DEBUG 2964 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwner(Long)
-2019-10-25 09:37:14.595 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/xhtml+xml', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json, application/xml, text/xml, application/*+xml]
-2019-10-25 09:37:14.605 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Owner [id=2, firstName=Veli, lastName=Soyad2]]
-2019-10-25 09:37:14.618 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.http.converter.HttpMessageConversionException: Could not instantiate JAXBContext for class [class com.SpringDeneme.SpringDemo.model.Owner]: Implementation of JAXB-API has not been found on module path or classpath.; nested exception is javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
- - with linked exception:
-[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]
-2019-10-25 09:37:14.630 ERROR 2964 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.converter.HttpMessageConversionException: Could not instantiate JAXBContext for class [class com.SpringDeneme.SpringDemo.model.Owner]: Implementation of JAXB-API has not been found on module path or classpath.; nested exception is javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
- - with linked exception:
-[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]] with root cause
+Action:
 
-java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory
-	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader.loadClass(TomcatEmbeddedWebappClassLoader.java:72) ~[spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at javax.xml.bind.ServiceLoaderUtil.nullSafeLoadClass(ServiceLoaderUtil.java:92) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ServiceLoaderUtil.safeLoadClass(ServiceLoaderUtil.java:125) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:230) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.ContextFinder.find(ContextFinder.java:375) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:691) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:632) ~[jakarta.xml.bind-api-2.3.2.jar:2.3.2]
-	at org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter.getJaxbContext(AbstractJaxb2HttpMessageConverter.java:113) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter.createMarshaller(AbstractJaxb2HttpMessageConverter.java:52) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter.writeToResult(Jaxb2RootElementHttpMessageConverter.java:181) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter.writeInternal(AbstractXmlHttpMessageConverter.java:85) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:298) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:226) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.0.RELEASE.jar:2.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.0.RELEASE.jar:5.2.0.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Update your application's configuration
 
-2019-10-25 09:37:14.635 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-10-25 09:37:14.637 DEBUG 2964 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2019-10-25 09:37:14.650 DEBUG 2964 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2019-10-28 09:42:04.234  INFO 12948 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 12948 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
+2019-10-28 09:42:04.238  INFO 12948 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
+2019-10-28 09:42:04.311  INFO 12948 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\ab175103\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2019-10-28 09:42:04.312  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-28 09:42:04.312  INFO 12948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 09:42:05.426  INFO 12948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 09:42:05.462  INFO 12948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-10-28 09:42:05.938  INFO 12948 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$e0d03fce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 09:42:05.988  INFO 12948 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-28 09:42:06.005  INFO 12948 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 09:42:06.429  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-28 09:42:06.447  INFO 12948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-28 09:42:06.453  INFO 12948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-28 09:42:06.616  INFO 12948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-28 09:42:06.617 DEBUG 12948 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-28 09:42:06.617  INFO 12948 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2305 ms
+2019-10-28 09:42:07.120  INFO 12948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-28 09:42:07.217  INFO 12948 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-28 09:42:07.464  INFO 12948 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-28 09:42:07.611  INFO 12948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 09:42:07.762  INFO 12948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 09:42:07.783  INFO 12948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-28 09:42:08.762  INFO 12948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-28 09:42:08.777  INFO 12948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 09:42:08.791  INFO 12948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-28 09:42:08.900  WARN 12948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 09:42:09.256  INFO 12948 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 09:42:09.267 DEBUG 12948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-28 09:42:09.351 DEBUG 12948 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2019-10-28 09:42:09.355  INFO 12948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-28 09:42:09.379 DEBUG 12948 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-28 09:42:09.387 DEBUG 12948 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-28 09:42:09.707  INFO 12948 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-28 09:42:09.780  INFO 12948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-28 09:42:09.785  INFO 12948 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 6.088 seconds (JVM running for 6.791)
+2019-10-28 10:14:34.826  INFO 10732 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 10732 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
+2019-10-28 10:14:34.830  INFO 10732 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
+2019-10-28 10:14:34.896  INFO 10732 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\ab175103\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2019-10-28 10:14:34.896  INFO 10732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-28 10:14:34.897  INFO 10732 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 10:14:36.160  INFO 10732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 10:14:36.193  INFO 10732 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-10-28 10:14:36.745  INFO 10732 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$34bb0130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:14:36.795  INFO 10732 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-28 10:14:36.812  INFO 10732 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:14:37.211  INFO 10732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-28 10:14:37.223  INFO 10732 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-28 10:14:37.224  INFO 10732 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-28 10:14:37.380  INFO 10732 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-28 10:14:37.381 DEBUG 10732 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-28 10:14:37.381  INFO 10732 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2484 ms
+2019-10-28 10:14:37.840  INFO 10732 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-28 10:14:37.915  INFO 10732 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-28 10:14:38.069  INFO 10732 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-28 10:14:38.181  INFO 10732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 10:14:38.306  INFO 10732 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 10:14:38.326  INFO 10732 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-28 10:14:39.315  INFO 10732 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-28 10:14:39.322  INFO 10732 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 10:14:39.336  INFO 10732 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-28 10:14:39.443  WARN 10732 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 10:14:39.688  INFO 10732 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 10:14:39.697 DEBUG 10732 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-28 10:14:39.762 DEBUG 10732 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2019-10-28 10:14:39.765  INFO 10732 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-28 10:14:39.788 DEBUG 10732 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-28 10:14:39.796 DEBUG 10732 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-28 10:14:40.038  INFO 10732 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 90bc1f31-16fd-4cf8-8f92-91ddd95ea89f
+
+2019-10-28 10:14:40.157  INFO 10732 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47a6aead, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e312258, org.springframework.security.web.header.HeaderWriterFilter@32fd0e53, org.springframework.security.web.csrf.CsrfFilter@2fcf1b89, org.springframework.security.web.authentication.logout.LogoutFilter@15a7d540, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26bd2a16, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7d894795, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4a5ae14e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@760bba6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6717f50d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51c6b16f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@731a84ad, org.springframework.security.web.session.SessionManagementFilter@919d50b, org.springframework.security.web.access.ExceptionTranslationFilter@502b3051, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1953fa54]
+2019-10-28 10:14:40.277  INFO 10732 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-28 10:14:40.354  INFO 10732 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-28 10:14:40.359  INFO 10732 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 6.103 seconds (JVM running for 6.754)
+2019-10-28 10:14:56.377  INFO 10732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-28 10:14:56.378  INFO 10732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 10:14:56.378 DEBUG 10732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-28 10:14:56.389 DEBUG 10732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-28 10:14:56.389  INFO 10732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-28 10:15:09.250 DEBUG 10732 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/rest/owners", parameters={}
+2019-10-28 10:15:09.254 DEBUG 10732 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.SpringDeneme.SpringDemo.controller.PetClinicRestController#getOwners()
+2019-10-28 10:15:09.533 DEBUG 10732 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-28 10:15:09.534 DEBUG 10732 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2019-10-28 10:15:09.549 DEBUG 10732 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-10-28 10:15:09.637 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-10-28 10:15:09.642 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-10-28 10:15:09.646 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-10-28 10:15:09.647 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2019-10-28 10:15:09.652 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2019-10-28 10:15:09.657 DEBUG 10732 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2019-10-28 10:15:09.669 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-10-28 10:15:09.670 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Oct 28 10:15:09 EET 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-10-28 10:15:09.712 DEBUG 10732 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2019-10-28 10:39:44.958  INFO 13508 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 13508 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
+2019-10-28 10:39:44.962  INFO 13508 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
+2019-10-28 10:39:45.044  INFO 13508 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\ab175103\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2019-10-28 10:39:45.044  INFO 13508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-28 10:39:45.044  INFO 13508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 10:39:46.180  INFO 13508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 10:39:46.216  INFO 13508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-10-28 10:39:46.725  INFO 13508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$96f810df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:39:46.778  INFO 13508 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-28 10:39:46.795  INFO 13508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:39:47.292  INFO 13508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-28 10:39:47.305  INFO 13508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-28 10:39:47.306  INFO 13508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-28 10:39:47.479  INFO 13508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-28 10:39:47.479 DEBUG 13508 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-28 10:39:47.479  INFO 13508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2434 ms
+2019-10-28 10:39:47.892  INFO 13508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-28 10:39:47.963  INFO 13508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-28 10:39:48.144  INFO 13508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-28 10:39:48.259  INFO 13508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 10:39:48.382  INFO 13508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 10:39:48.400  INFO 13508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-28 10:39:49.406  INFO 13508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-28 10:39:49.413  INFO 13508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 10:39:49.428  INFO 13508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-28 10:39:49.495  WARN 13508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 10:39:49.787  INFO 13508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 10:39:49.800 DEBUG 13508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-28 10:39:49.865 DEBUG 13508 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2019-10-28 10:39:49.869  INFO 13508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-28 10:39:49.892 DEBUG 13508 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-28 10:39:49.901 DEBUG 13508 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-28 10:39:50.366  INFO 13508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46601d78, org.springframework.security.web.context.SecurityContextPersistenceFilter@79718473, org.springframework.security.web.header.HeaderWriterFilter@4d18245e, org.springframework.security.web.csrf.CsrfFilter@5269ff96, org.springframework.security.web.authentication.logout.LogoutFilter@4d529e78, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3bfe93c1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6322526d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@531ae333, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@484da955, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bcefa69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71c8f466, org.springframework.security.web.session.SessionManagementFilter@3391b25e, org.springframework.security.web.access.ExceptionTranslationFilter@6c0e0e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26a0e9c7]
+2019-10-28 10:39:50.501  INFO 13508 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-28 10:39:50.576  INFO 13508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-28 10:39:50.581  INFO 13508 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 6.276 seconds (JVM running for 7.03)
+2019-10-28 10:39:58.014  INFO 13508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-28 10:39:58.016  INFO 13508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 10:39:58.017 DEBUG 13508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-28 10:39:58.027 DEBUG 13508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-28 10:39:58.027  INFO 13508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-28 10:43:08.573  INFO 204 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 204 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
+2019-10-28 10:43:08.578  INFO 204 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
+2019-10-28 10:43:08.644  INFO 204 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\ab175103\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2019-10-28 10:43:08.645  INFO 204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-28 10:43:08.645  INFO 204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 10:43:10.481  INFO 204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 10:43:10.529  INFO 204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2019-10-28 10:43:11.348  INFO 204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$60fd38bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:43:11.457  INFO 204 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-28 10:43:11.479  INFO 204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:43:12.131  INFO 204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-28 10:43:12.153  INFO 204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-28 10:43:12.158  INFO 204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-28 10:43:12.341  INFO 204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-28 10:43:12.342 DEBUG 204 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-28 10:43:12.342  INFO 204 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3697 ms
+2019-10-28 10:43:12.962  INFO 204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-28 10:43:13.058  INFO 204 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-28 10:43:13.261  INFO 204 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-28 10:43:13.395  INFO 204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 10:43:13.520  INFO 204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 10:43:13.540  INFO 204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-28 10:43:14.640  INFO 204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-28 10:43:14.648  INFO 204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 10:43:14.663  INFO 204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-28 10:43:14.767  WARN 204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 10:43:15.168  INFO 204 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 10:43:15.179 DEBUG 204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-28 10:43:15.256 DEBUG 204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2019-10-28 10:43:15.260  INFO 204 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-28 10:43:15.289 DEBUG 204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-28 10:43:15.298 DEBUG 204 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-28 10:43:15.689  INFO 204 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64b5fcab, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c0f6151, org.springframework.security.web.header.HeaderWriterFilter@38daa368, org.springframework.security.web.csrf.CsrfFilter@5d8d2a83, org.springframework.security.web.authentication.logout.LogoutFilter@4c043c83, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@697b4a02, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2911b6b3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2afb2d0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5cd15f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43e46591, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@316e8470, org.springframework.security.web.session.SessionManagementFilter@43c930b7, org.springframework.security.web.access.ExceptionTranslationFilter@6cb1dc1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@122ec0c1]
+2019-10-28 10:43:15.871  INFO 204 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-10-28 10:43:15.948  INFO 204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-28 10:43:15.952  INFO 204 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 7.983 seconds (JVM running for 8.71)
+2019-10-28 10:43:23.924  INFO 204 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-28 10:43:23.925  INFO 204 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 10:43:23.926 DEBUG 204 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-28 10:43:23.936 DEBUG 204 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-28 10:43:23.936  INFO 204 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-28 10:44:09.228  INFO 2312 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Starting SpringDemoApplication on ab12400-0008 with PID 2312 (C:\Users\ab175103\Desktop\SpringDemo\build\classes\java\main started by AB175103 in C:\Users\ab175103\Desktop\SpringDemo)
+2019-10-28 10:44:09.233  INFO 2312 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : No active profile set, falling back to default profiles: default
+2019-10-28 10:44:09.300  INFO 2312 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\ab175103\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/ab175103/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+2019-10-28 10:44:09.304  INFO 2312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-28 10:44:09.304  INFO 2312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-28 10:44:10.766  INFO 2312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-28 10:44:10.801  INFO 2312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-10-28 10:44:11.437  INFO 2312 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8aad4bcc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:44:11.501  INFO 2312 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-28 10:44:11.524  INFO 2312 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-28 10:44:12.021  INFO 2312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-28 10:44:12.034  INFO 2312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-28 10:44:12.035  INFO 2312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-10-28 10:44:12.201  INFO 2312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-28 10:44:12.201 DEBUG 2312 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-28 10:44:12.201  INFO 2312 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2897 ms
+2019-10-28 10:44:12.810  INFO 2312 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-10-28 10:44:12.910  INFO 2312 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2019-10-28 10:44:13.128  INFO 2312 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-10-28 10:44:13.278  INFO 2312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-28 10:44:13.430  INFO 2312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-28 10:44:13.452  INFO 2312 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-10-28 10:44:14.565  INFO 2312 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-10-28 10:44:14.572  INFO 2312 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-28 10:44:14.588  INFO 2312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-28 10:44:14.653  WARN 2312 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-28 10:44:15.038  INFO 2312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-28 10:44:15.050 DEBUG 2312 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-28 10:44:15.123 DEBUG 2312 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 16 mappings in 'requestMappingHandlerMapping'
+2019-10-28 10:44:15.127  INFO 2312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-28 10:44:15.152 DEBUG 2312 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-28 10:44:15.162 DEBUG 2312 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-28 10:44:15.561  INFO 2312 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4586c731, org.springframework.security.web.context.SecurityContextPersistenceFilter@38d28209, org.springframework.security.web.header.HeaderWriterFilter@7d6ca43e, org.springframework.security.web.csrf.CsrfFilter@67644b06, org.springframework.security.web.authentication.logout.LogoutFilter@e140fa0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27dc4a83, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c448e36, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@621891c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@790a0398, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47ee1f1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74fbc38d, org.springframework.security.web.session.SessionManagementFilter@60596e34, org.springframework.security.web.access.ExceptionTranslationFilter@4a768fed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a7399a3]
+2019-10-28 10:44:15.712  INFO 2312 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2019-10-28 10:44:15.806  INFO 2312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-28 10:44:15.834  INFO 2312 --- [restartedMain] c.S.SpringDemo.SpringDemoApplication     : Started SpringDemoApplication in 7.244 seconds (JVM running for 8.028)
+2019-10-28 10:44:30.261  INFO 2312 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-28 10:44:30.263  INFO 2312 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-28 10:44:30.264 DEBUG 2312 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-28 10:44:30.276 DEBUG 2312 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-28 10:44:30.277  INFO 2312 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms

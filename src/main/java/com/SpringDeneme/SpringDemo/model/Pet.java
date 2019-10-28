@@ -1,12 +1,21 @@
 package com.SpringDeneme.SpringDemo.model;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table
 public class Pet {
 
+    @Id
+    @SequenceGenerator(name = "sq_pet_id",sequenceName = "sq_pet_id",initialValue = 1,allocationSize = 1)
+    @GeneratedValue(generator = "sq_pet_id")
     private Long id;
     private String name;
     private Date birthDate;
+
+    @ManyToOne()
+    @JoinColumn(name = "owner_id")
     private Owner owner;
     public Long getId() {
         return id;
