@@ -1,5 +1,7 @@
 package com.SpringDeneme.SpringDemo.model;
 
+import org.hibernate.annotations.NaturalId;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -13,6 +15,9 @@ public class Pet {
     private Long id;
     private String name;
     private Date birthDate;
+
+    @NaturalId(mutable = false)
+    private String petUniqId;
 
     @ManyToOne()
     @JoinColumn(name = "owner_id")

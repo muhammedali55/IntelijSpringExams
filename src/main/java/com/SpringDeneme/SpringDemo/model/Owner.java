@@ -1,5 +1,7 @@
 package com.SpringDeneme.SpringDemo.model;
 
+import com.SpringDeneme.SpringDemo.enums.Authority;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -14,8 +16,24 @@ public class Owner {
     private String firstName;
     private String lastName;
 
+    // String key anahtarı ile kayıt yapar
+    @Enumerated(EnumType.STRING)
+    private Authority authority;
+    // Int value değeri ile kayıt yapar.
+    @Enumerated(EnumType.ORDINAL)
+    private Authority authorityValue;
+
+
     @OneToMany(mappedBy = "owner")
     private Set<Pet> pets = new HashSet<>();
+
+    public Authority getAuthority() {
+        return authority;
+    }
+
+    public void setAuthority(Authority authority) {
+        this.authority = authority;
+    }
 
     public Long getId() {
         return id;
